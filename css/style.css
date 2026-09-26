@@ -50,6 +50,7 @@ h1 {
 
 h1 .small {
   font-size: 36px;
+  line-height: 1.1;
 }
 
 .wrap {
