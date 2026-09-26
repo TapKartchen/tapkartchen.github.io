@@ -14,153 +14,305 @@
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="logo" href="index.html">Tap<span>Kärtchen</span></a>
+      <a class="logo" href="#start" data-page="start">Tap<span>Kärtchen</span></a>
       <button class="menu-btn" aria-label="Menü öffnen"><span></span></button>
       <ul class="nav-links">
-        <li><a class="active" href="index.html">Start</a></li>
-        <li><a href="idee.html">Die Idee</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a class="active" href="#start" data-page="start">Start</a></li>
+        <li><a href="#idee" data-page="idee">Die Idee</a></li>
+        <li><a href="#kontakt" data-page="kontakt">Kontakt</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">NFC Kärtchen</p>
-		  <h1>
-		  <b>
-		    <span class="small">Mehr Google-Bewertungen.</span><br>
-			<span class ="small">Mit nur einem Tap.</span>
-		  </b>
-		  </h1>
-          <p class="lead">Ein Tap und schon geht’s direkt zur Google Bewertung. Einfach das Handy kurz an die Karte halten und loslegen. Kein Suchen, kein Link, kein Aufwand.</p>
-          <div class="hero-actions">
-            <a class="btn btn-navy" href="idee.html">Die Idee ansehen</a>
-            <a class="btn btn-ghost" href="kontakt.html">Nachricht schreiben</a>
+    <!-- START -->
+    <div id="page-start" class="page is-active" data-title="TapKärtchen — Ein kleiner Tap, eine klare Stimme">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">NFC Kärtchen</p>
+            <h1>
+              <b>
+                <span class="small">Mehr Google-Bewertungen.</span><br>
+                <span class="small">Mit nur einem Tap.</span>
+              </b>
+            </h1>
+            <p class="lead">Ein Tap und schon geht’s direkt zur Google Bewertung. Einfach das Handy kurz an die Karte halten und loslegen. Kein Suchen, kein Link, kein Aufwand.</p>
+            <div class="hero-actions">
+              <a class="btn btn-navy" href="#idee" data-page="idee">Die Idee ansehen</a>
+              <a class="btn btn-ghost" href="#kontakt" data-page="kontakt">Nachricht schreiben</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="img/card-hero.jpg" alt="Navyblaues TapKärtchen auf hellem Stein neben Olivenzweig">
+            <div class="float-note">
+              <strong>Klein,</strong>
+              aber nicht zu übersehen.
+            </div>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="img/card-hero.jpg" alt="Navyblaues TapKärtchen auf hellem Stein neben Olivenzweig">
-          <div class="float-note">
-            <strong>Klein,</strong>
-            aber nicht zu übersehen.
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-soft">
-      <div class="wrap grid-2">
-        <div>
-          <p class="eyebrow">Warum Bewertungen</p>
-          <h2>Gute Google Bewertungen schaffen Vertrauen und können neue Kundinnen und Kunden auf einen Ort aufmerksam machen.</h2>
-          <p class="muted">Viele Menschen schauen sich Bewertungen an, bevor sie ein Café, einen Salon oder ein Geschäft besuchen. Das TapKärtchen macht es einfacher, selbst eine Bewertung dazulassen. Einfach antippen und direkt zu Google.</p>
+      <section class="section-soft">
+        <div class="wrap grid-2">
+          <div>
+            <p class="eyebrow">Warum Bewertungen</p>
+            <h2>Gute Google Bewertungen schaffen Vertrauen und können neue Kundinnen und Kunden auf einen Ort aufmerksam machen.</h2>
+            <p class="muted">Viele Menschen schauen sich Bewertungen an, bevor sie ein Café, einen Salon oder ein Geschäft besuchen. Das TapKärtchen macht es einfacher, selbst eine Bewertung dazulassen. Einfach antippen und direkt zu Google.</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat">
+              <div class="stat-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 9a7 7 0 0 1 14 0"/></svg>
+              </div>
+              <div>
+                <b>Klarer Weg</b>
+                <span>Direkt zur Bewertungsseite, ohne App-Suche.</span>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.2 6.6H21l-5.4 4 2.1 6.4L12 16.8 6.3 20l2.1-6.4L3 9.6h6.8Z"/></svg>
+              </div>
+              <div>
+                <b>Echte Google Bewertungen</b>
+                <span>Kundinnen und Kunden teilen ihre tatsächliche Erfahrung direkt bei Google.</span>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h4l3-7 3 14 3-7h3"/></svg>
+              </div>
+              <div>
+                <b>Auffällig im Alltag</b>
+                <span>Die Karte fällt ins Auge und macht es einfach, direkt eine Bewertung dazulassen.</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="stat-card">
-          <div class="stat">
-            <div class="stat-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 9a7 7 0 0 1 14 0"/></svg>
-            </div>
-            <div>
-              <b>Klarer Weg</b>
-              <span>Direkt zur Bewertungsseite, ohne App-Suche.</span>
-            </div>
-          </div>
-          <div class="stat">
-            <div class="stat-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.2 6.6H21l-5.4 4 2.1 6.4L12 16.8 6.3 20l2.1-6.4L3 9.6h6.8Z"/></svg>
-            </div>
-            <div>
-              <b>Echte Google Bewertungen</b>
-              <span>Kundinnen und Kunden teilen ihre tatsächliche Erfahrung direkt bei Google.</span>
-            </div>
-          </div>
-          <div class="stat">
-            <div class="stat-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h4l3-7 3 14 3-7h3"/></svg>
-            </div>
-            <div>
-              <b>Auffällig im Alltag</b>
-              <span>Die Karte fällt ins Auge und macht es einfach, direkt eine Bewertung dazulassen.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">So funktioniert es</p>
-        <h2>Drei kleine Schritte.</h2>
-        <p class="muted">Nichts einrichten auf dem Smartphone. Einfach halten — und fertig.</p>
-        <div class="steps">
-          <article class="step">
-            <div class="step-num">1</div>
-            <h3>Karte halten</h3>
-            <p class="muted">Das Smartphone kurz an das TapKärtchen führen. NFC erkennt die Karte von selbst.</p>
+      <section>
+        <div class="wrap">
+          <p class="eyebrow">So funktioniert es</p>
+          <h2>Drei kleine Schritte.</h2>
+          <p class="muted">Nichts einrichten auf dem Smartphone. Einfach halten — und fertig.</p>
+          <div class="steps">
+            <article class="step">
+              <div class="step-num">1</div>
+              <h3>Karte halten</h3>
+              <p class="muted">Das Smartphone kurz an das TapKärtchen führen. NFC erkennt die Karte von selbst.</p>
+            </article>
+            <article class="step">
+              <div class="step-num">2</div>
+              <h3>Seite öffnet sich</h3>
+              <p class="muted">Es erscheint direkt die hinterlegte Google-Bewertungsseite des Ortes.</p>
+            </article>
+            <article class="step">
+              <div class="step-num">3</div>
+              <h3>Google Bewertung hinterlassen</h3>
+              <p class="muted">Wer möchte, kann direkt eine Google Bewertung schreiben.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sage">
+        <div class="wrap gallery">
+          <img src="img/tap-moment.jpg" alt="Smartphone wird neben einem TapKärtchen auf einem Holztisch gehalten">
+          <div class="gallery-copy">
+            <h3>Überall Sichtbar.</h3>
+            <p>Auf der Theke, am Tisch, an der Kasse oder einfach an der Tür. Das TapKärtchen kann dort angebracht werden, wo es direkt ins Auge fällt. Ein kurzer Tap und die Google Bewertung ist nur noch einen Schritt entfernt.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <p class="eyebrow">Für wen</p>
+          <h2>Für Orte, die gesehen werden wollen.</h2>
+          <p class="muted">Für Unternehmen, die mit echten Google Bewertungen Vertrauen schaffen und neue Kundinnen und Kunden erreichen möchten.</p>
+          <div class="pills">
+            <span class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V7l8-4 8 4v12H4Zm8-8h.01"/></svg>
+              Restaurants
+            </span>
+            <span class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10h16v9H4zM8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              Cafés
+            </span>
+            <span class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4h12v4H6zM8 12h8M7 20h10"/></svg>
+              Friseursalons
+            </span>
+            <span class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c4 4 7 8 7 12a7 7 0 1 1-14 0c0-4 3-8 7-12Z"/></svg>
+              Studios
+            </span>
+            <span class="pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10h16l-1 10H5L4 10Zm4-6h8l2 6H6l2-6Z"/></svg>
+              kleine Läden
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- DIE IDEE -->
+    <div id="page-idee" class="page" hidden data-title="Die Idee — TapKärtchen">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Hintergrund</p>
+          <h1>Kleine Karte.<br>Große Wirkung.</h1>
+          <p class="lead">NFC klingt technisch, ist aber ganz einfach: Handy kurz an die Karte halten und direkt zur Google Bewertung gelangen. Schnell, unkompliziert und im Alltag leicht zu nutzen.</p>
+        </div>
+      </section>
+
+      <section class="section-soft">
+        <div class="wrap grid-2">
+          <div>
+            <p class="eyebrow">Was ist NFC?</p>
+            <h2>Ein kurzer Kontakt zwischen Handy und Karte.</h2>
+            <p class="muted">NFC steht für Near Field Communication. Damit können Geräte ganz einfach Informationen austauschen, wenn sie sich nur wenige Zentimeter voneinander entfernt befinden.</p>
+            <p class="muted" style="margin-top:14px">Im TapKärtchen steckt ein kleiner NFC Chip. Hält man das Smartphone kurz daran, erkennt es den Chip und öffnet direkt die hinterlegte Google Bewertungsseite.<br>Keine App nötig.</p>
+          </div>
+          <img src="img/cards-pair.jpg" alt="Zwei navyblaue NFC-Karten auf hellem Stein" class="idea-feature-img">
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <p class="eyebrow">Im Kern</p>
+          <h2>Was das TapKärtchen macht.</h2>
+          <div class="benefits">
+            <article class="benefit">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 3L5 14h7l-1 7 8-11h-7l1-7Z"/></svg>
+              <h3>Einfach antippen</h3>
+              <p class="muted">Das Handy kurz an die Karte halten und direkt zur Google Bewertungsseite gelangen.</p>
+            </article>
+            <article class="benefit">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.1 6.4H21l-5.4 3.9 2 6.4L12 16.6 6.4 19.7l2-6.4L3 9.4h6.9Z"/></svg>
+              <h3>Einfach sichtbar</h3>
+              <p class="muted">Das TapKärtchen kann dort stehen oder angebracht werden, wo es schnell auffällt. So wird es leichter, direkt eine Google Bewertung zu hinterlassen.</p>
+            </article>
+            <article class="benefit">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg>
+              <h3>Ohne Extra-App</h3>
+              <p class="muted">Kein Download, kein Konto, kein weiterer Bildschirm im Laden.</p>
+            </article>
+            <article class="benefit">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 4v6c0 5-3.4 8.4-7 10-3.6-1.6-7-5-7-10V7l7-4Z"/></svg>
+              <h3>Direkt und nachvollziehbar</h3>
+              <p class="muted">Die Karte öffnet eine öffentliche Google-Seite. Nichts wird im Hintergrund versteckt.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sage">
+        <div class="wrap idea-block">
+          <article class="idea-card">
+            <img src="img/card-hero.jpg" alt="Einzelnes TapKärtchen mit Olivenzweig">
+            <div class="pad">
+              <h3>Form und Material</h3>
+              <p class="muted">Das TapKärtchen ist quadratisch, glänzend und aus Kunststoff. Auf der Rückseite befindet sich ein Klebepad, sodass es einfach an Theken, Tischen, Türen oder anderen Flächen angebracht werden kann.<br>Klein, praktisch und leicht dort anzubringen, wo Kunden es direkt sehen.</p>
+            </div>
           </article>
-          <article class="step">
-            <div class="step-num">2</div>
-            <h3>Seite öffnet sich</h3>
-            <p class="muted">Es erscheint direkt die hinterlegte Google-Bewertungsseite des Ortes.</p>
-          </article>
-          <article class="step">
-            <div class="step-num">3</div>
-            <h3>Google Bewertung hinterlassen</h3>
-            <p class="muted">Wer möchte, kann direkt eine Google Bewertung schreiben.</p>
+          <article class="idea-card">
+            <img src="img/tap-moment.jpg" alt="Alltagsszene mit Smartphone und Karte">
+            <div class="pad">
+              <h3>Wo es liegen kann</h3>
+              <p class="muted">Auf der Theke, am Tisch, neben der Kasse oder beim Spiegel. Das TapKärtchen kann überall dort liegen, wo Kunden es gut sehen. Es kann auch an Türen oder anderen Flächen angebracht werden.</p>
+            </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section-sage">
-      <div class="wrap gallery">
-        <img src="img/tap-moment.jpg" alt="Smartphone wird neben einem TapKärtchen auf einem Holztisch gehalten">
-        <div class="gallery-copy">
-          <h3>Überall Sichtbar.</h3>
-          <p>Auf der Theke, am Tisch, an der Kasse oder einfach an der Tür. Das TapKärtchen kann dort angebracht werden, wo es direkt ins Auge fällt. Ein kurzer Tap und die Google Bewertung ist nur noch einen Schritt entfernt.</p>
+      <section>
+        <div class="wrap center-content">
+          <div>
+            <h2>Bewerten bleibt freiwillig.</h2>
+            <p class="muted">
+              Das TapKärtchen macht es einfach. Handy kurz dranhalten, Google öffnen und Bewertung schreiben. Wer nicht möchte, muss natürlich nichts machen.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-navy" href="#kontakt" data-page="kontakt">Fragen stellen</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">Für wen</p>
-        <h2>Für Orte, die gesehen werden wollen.</h2>
-        <p class="muted">Für Unternehmen, die mit echten Google Bewertungen Vertrauen schaffen und neue Kundinnen und Kunden erreichen möchten.</p>
-        <div class="pills">
-          <span class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V7l8-4 8 4v12H4Zm8-8h.01"/></svg>
-            Restaurants
-          </span>
-          <span class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10h16v9H4zM8 10V7a4 4 0 0 1 8 0v3"/></svg>
-            Cafés
-          </span>
-          <span class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4h12v4H6zM8 12h8M7 20h10"/></svg>
-            Friseursalons
-          </span>
-          <span class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c4 4 7 8 7 12a7 7 0 1 1-14 0c0-4 3-8 7-12Z"/></svg>
-            Studios
-          </span>
-          <span class="pill">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10h16l-1 10H5L4 10Zm4-6h8l2 6H6l2-6Z"/></svg>
-            kleine Läden
-          </span>
+    <!-- KONTAKT -->
+    <div id="page-kontakt" class="page" hidden data-title="Kontakt — TapKärtchen">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Austausch</p>
+          <h1>Kontakt</h1>
+          <p class="lead">Fragen zum TapKärtchen, zur Idee oder zur Gestaltung? Schreib einfach.</p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section>
+        <div class="wrap contact-grid">
+          <aside class="contact-card">
+            <h2>Ana Tulei</h2>
+            <p class="muted">Das TapKärtchen verbindet NFC Technik mit einer einfachen Idee: Handy dranhalten und direkt zur Google Bewertung.</p>
+            <ul class="contact-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4h12v16H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+                <div>
+                  <strong>Telefon</strong><br>
+                  <a href="tel:+4915229717978">+49 1522 9717978</a>
+                </div>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+                <div>
+                  <strong>E-Mail</strong><br>
+                  <a href="mailto:tuleia.trading@gmail.com">tuleia.trading@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12a7 7 0 0 1 14 0v7H5v-7Z"/><path d="M9 19v2m6-2v2"/></svg>
+                <div>
+                  <strong>WhatsApp</strong><br>
+                  +49 1522 9717978
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="form-card">
+            <h2>Schreiben Sie mir</h2>
+            <p class="muted" style="margin-bottom:18px">Ich antworte, sobald ich kann.</p>
+            <form class="form" id="message-form">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="email">E-Mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div>
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="btn btn-navy" type="submit">Nachricht senden</button>
+              <p class="form-note" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <p class="logo">Tap<span>Kärtchen</span></p>
-      <p class="tiny">Ein Projekt von Ana Tulei · <a href="kontakt.html">Kontakt</a></p>
-      <svg class="leaf" width="36" height="36" viewBox="0 0 64 64" fill="none" stroke="#6B8F71" stroke-width="1.6">
+      <p class="tiny">Ein Projekt von Ana Tulei · <a href="#kontakt" data-page="kontakt">Kontakt</a></p>
+      <svg class="leaf" width="36" height="36" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6">
         <path d="M12 44c16-28 36-28 40-28-2 18-18 36-40 28Z"/>
         <path d="M16 40c10-8 22-16 36-20"/>
       </svg>
