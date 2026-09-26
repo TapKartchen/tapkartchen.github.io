@@ -43,6 +43,15 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+h1 .small {
+  font-size: 36px;
+}
+
 .wrap {
   width: min(var(--max), calc(100% - 48px));
   margin: 0 auto;
