@@ -23,17 +23,6 @@ Die Seite ist als Projekt- und Atelierseite gedacht, nicht als Shop. Es gibt kei
 - Überschriften: [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond)
 - Fließtext: [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
 
-## Lokal ansehen
-
-Eine HTML-Datei einfach im Browser öffnen oder den Ordner lokal bereitstellen:
-
-```bash
-# in diesem Verzeichnis
-python3 -m http.server 8080
-```
-
-Danach im Browser `http://localhost:8080` aufrufen.
-
 ## Auf GitHub Pages veröffentlichen
 
 1. Ein Repository anlegen und diesen Ordner als Wurzelverzeichnis hochladen (oder als Ordner `docs/`).
